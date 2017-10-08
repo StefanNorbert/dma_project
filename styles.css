@@ -46,7 +46,6 @@ body {
 
 .group, .period {
     color: rgb(6,109,201);
-    /*font-weight: bold;*/
     text-align: center;
 }
 
@@ -76,9 +75,15 @@ body {
 }
 
 a.box {
+    border-radius: 2px;
     border: 1px solid #000;
     color: rgb(6,109,168);
     text-decoration: none;
+}
+
+a.box:hover,
+a.box:focus {
+    outline: 2px dotted #777;
 }
 
 .table1 a.box {
@@ -175,4 +180,28 @@ a.nemetale span {
 
 a.gaze_nobile span {
     color: rgb(255,0,85);
+}
+
+@media all and (min-width: 701px) and (max-width: 900px) {
+    html {
+        font-size: 13px;
+    }
+}
+
+@media all and (min-width: 601px) and (max-width: 700px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media all and (min-width: 501px) and (max-width: 600px) {
+    html {
+        font-size: 11px;
+    }
+}
+
+@media all and (max-width: 500px) {
+    html {
+        font-size: 10px;
+    }
 }
